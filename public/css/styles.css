@@ -1,0 +1,905 @@
+:root {
+    --primary-color: whitesmoke;
+    --secondary-color:gray;
+  }
+
+.opacity-1{
+  background-color: rgba(255, 255, 250, 0.8);
+  transition-duration: 2s;
+}
+.opacity-2{
+  background-color: rgba(255, 255, 250, 0);
+  transition-duration: 2s;
+}
+
+body{
+    margin: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ i {
+  color: gray;
+}
+a{
+  text-decoration: none;
+}
+.titles {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--secondary-color);
+}
+.navi{
+    height: 120px;
+    background-color: var(--primary-color);
+
+}
+ ul{
+    padding-top: 18px;
+    list-style-type: none;
+}
+ul i {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: large;
+    cursor: pointer;
+}
+ul i:hover {
+   color: var(--secondary-color);
+
+   transition-duration: 1s;
+}
+.fa-bars{
+    margin-left: -40px;
+    font-size: x-large;
+    margin-top: 20px;
+}
+.right-part{
+    padding-left: 40px;
+}
+
+
+#menu-items{
+    background: var(--primary-color);
+   z-index: 200;
+    padding: 20px;
+height: 2000px;
+   position: absolute;
+  left: -180px;
+   top: -50px;
+   width: 300px;
+}
+#menu-items li:first-child{
+    margin-top: 80px;
+}
+#menu-items li{
+    padding-bottom: 20px;
+ margin-bottom:20px ;
+ font-size:medium;
+list-style: none;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-left: 50px;
+margin-top: 20px;
+overflow-y: auto;
+ border-bottom: 1px solid gray;
+
+}
+#menu-items li:hover{
+    font-size: large;
+
+    transition: all 0.3s ;
+    color: #6A6D78;
+
+}
+#menu-items li a:hover{
+  transition: all 0.3s ;
+  color: #6A6D78;
+
+}
+
+.slide-right {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.links a{
+color: var(--secondary-color);
+text-decoration: none;
+}
+.carousel-inner{
+    margin-left: 0px;
+    margin-right: 0;
+    width: 100%;
+   z-index: -1;
+   margin-top: 50px;
+    height: 750px;
+    margin-bottom: 350px;
+    opacity: 0.8;
+}
+
+.text{
+    font-size: 500px;
+    z-index: 5;
+    color: black;
+}
+
+
+.introduction{
+    margin-top: -750px;
+    z-index: 20;
+    margin-left: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+    text-shadow: white 1px 0 10px;
+    z-index: +222;
+}
+.introduction h1 , .introduction p{
+    margin-bottom: 30px;
+}
+.introduction .btn{
+    padding: 10px;
+    background-color: rgb(243, 169, 181);
+    border-radius: 0;
+    justify-content: space-between;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.introduction .btn:hover{
+    cursor: pointer;
+}
+
+ .carousel-indicators{
+margin-top: 50px;
+}
+.categories{
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.category img{
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+
+
+}
+.description{
+  margin-top: -30%;
+
+
+
+}
+.description h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--secondary-color);
+  font-weight:bolder;
+
+}
+.description a{
+  text-decoration: none;
+ font-size: larger;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.shop:hover{
+
+  transition-duration: 5s;
+  background-color: gray;
+}
+
+
+.slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.card{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card img{
+  height: 300px;
+}
+.card a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+
+}
+.card-body{
+  background-color: var(--primary-color);
+}
+.products img{
+  height: 270px;
+}
+.products .card-title , .produits .card-title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+
+}
+.best-sellers{
+  margin-bottom: 40px;
+}
+.shopping{
+  border: 1px solid gray;
+  padding: 4px 7px 4px 7px;
+
+}
+.shopping:hover{
+  background-color: #6A6D78;
+  color: var(--primary-color);
+  transition-duration: 1s;
+}
+.best-sellers .statue{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: fit-content;
+  margin-left: 5px;
+  padding: 5px;
+  height: 30px;
+  margin-top: -450px;
+
+
+}
+.produits .statue{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: fit-content;
+    margin-left: 5px;
+    padding: 5px;
+    height: 30px;
+    margin-top: -430px;
+}
+
+.produits .card{
+  margin-bottom: 380px;
+}
+.item{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.phone{
+  display: none;
+}
+.Services{
+ height: fit-content;
+ padding-top: 50px;
+ padding-bottom: 50px;
+  background-color: var(--primary-color);
+  margin-bottom: 50px;
+}
+.Services i{
+  font-size: x-large;
+  color: var(--secondary-color);
+}
+.Services h5{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--secondary-color);
+}
+.best-sellers .item{
+  height: 500px;
+
+}
+.best-sellers .col{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 3px;
+
+}
+.best-sellers .col img{
+ height: 380px;
+}
+footer{
+  background-color: var(--primary-color);
+  margin-top: 80px;
+}
+footer a{
+  color: var(--secondary-color);
+}
+.search-box{
+
+ padding: 20px;
+ margin-bottom: -180px;
+}
+
+.srch{
+  height: 70px;
+ padding-left: 10px;
+  border-radius: 10px;
+  border: none;
+
+}
+.chercher{
+z-index: -100;
+margin-top: 10%;
+}
+.chercher input , .chercher button{
+  background-color: rgba(255, 250, 250,0.5);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.chercher input:focus{
+  outline: none;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-2-5 13:27:36
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-fwd-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
+
+
+@media only screen and (max-width: 1400px) {
+ .introduction{
+  margin-top: -890px;
+ }
+ .carousel-inner{
+  margin-bottom: 390px;
+ }
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    ul i {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: large;
+    }
+    .categories img{
+      margin-bottom: 00px;
+    }
+    .description{
+      margin-top: -300px;
+    }
+    .statue{
+      margin-top: -200%;
+    }
+    .products{
+      margin-bottom: 340px;
+    }
+    .intro {
+      display: none;
+
+    }
+    .phone{
+      display: block;
+    }
+    .phone img{
+      height: 600px;
+      margin-top: 50px;
+
+    }
+  .phone  .carousel-inner{
+      margin-bottom: -180px;
+    }
+.Services div{
+  margin-bottom: 30px;
+}
+
+}
+@-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
+  .scale-up-center {
+	-webkit-animation: scale-up-center 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: scale-up-center 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-30 1:8:45
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+
+
+
+  .slide-bottom {
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  /* ----------------------------------------------
+ * Generated by Animista on 2024-2-6 23:51:23
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-2-6 23:53:50
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+.pagination ul a {
+
+ color: #6A6D78;
+ background-color: var(--primary-color);
+}
+.pagination ul a:hover {
+
+  color: #6A6D78;
+  background-color: var(--primary-color);
+  box-shadow:rgba(149, 157, 165, 0.2) 0px 2px 3px ;
+ }
+
+
+ .compte{
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 130px;
+
+ }
+.lists{
+  border-right: 1px solid gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: gray;
+
+
+}
+.lists .col{
+    margin-top: 15px;
+
+}
+.lists .col a{
+text-decoration: none;
+
+color: gray;
+}
+
+.dash{
+background-color: var(--primary-color);
+ padding: 10px;
+color: gray;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin-top: 2px;
+font-size: x-large;
+text-decoration: none;
+ border-radius: 5px;
+
+ margin-right: 10px;
+ margin-bottom: 30px;
+ height: 60px;
+
+}
+
+.dash:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition-duration: 1s;
+}
+.prix{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--secondary-color);
+}
+.total{
+    background-image: url('/pictures/Fond Ã  Motifs De Feuilles De Calathea Lutea Gris _ Photo Premium.jpeg');
+    padding-bottom: 30px;
+}
+
+.conteur .p-2{
+    border:1px solid gray ;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.order{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #6A6D78;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.order input {
+    border-radius: 5px;
+  padding: 7px;
+    border: 0.05px solid gray;
+}
+.order input:focus{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    outline: none;
+}
+.order select:focus{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    outline: none;
+}
+.acheter{
+    background-color: #6A6D78;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+.voir{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid pink;
+    background-color: pink;
+    color: white;
+}
+.ingredient{
+
+height: 200px;
+width: 200px;
+background: pink;
+border-radius: 50%;
+position: relative;
+border: none;
+
+}
+
+
+.ingredient h5{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.ingredients a{
+    text-decoration: none;
+    margin-top: 20px;
+}
+.fa-plus{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: pink;
+}
+.combos{
+   background-color: var(--primary-color);
+   height: fit-content;
+   padding: 50px;
+}
+
+
+.pacifico-regular {
+
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+
+
+  }
+  .scale-up-center {
+	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-2-16 15:49:55
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  .heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-2-16 15:53:26
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+ @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+
+
+  .loader {
+    border: 4px solid #f3f3f3; /* Light gray */
+    border-top: 4px solid pink; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto; /* Adjust margin as needed */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+ .text-focus-in {
+	-webkit-animation: scale-up-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-2-18 23:8:11
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+      }
+    }
+    @keyframes scale-up-top {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+      }
+  }
+.add_comment{
+    height: 30px;
+    border: 1px solid #6A6D78;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.add_comment::placeholder{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.livraison-radio {
+    margin-top: 20px;
+    font-size: larger;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 10px;
+}
+input[type="radio"]{
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* For older versions of webkit browsers */
+    -moz-appearance: none; /* For older versions of Firefox */
+
+    width: 20px; /* Set the desired width */
+    height: 20px; /* Set the desired height */
+    border-radius: 50%; /* Make it round */
+    border: 2px solid gray; /* Set border color */
+    background-color: white; /* Set background color */
+    outline: none; /* Remove default focus outline */
+    margin-right: 5px; /* Adjust spacing if needed */
+}
+input[type="radio"]:checked {
+    background-color: gray; /* Set the background color when checked */
+
+  }
+.fact{
+    background-color: whitesmoke;
+}
